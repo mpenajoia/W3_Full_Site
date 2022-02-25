@@ -1,17 +1,17 @@
 # Web3 Full Crypto Site
 
 ### Resources
-VS Code
-Extension: ES7+ React/Redux/React-Native/JS snippets
-[RapidAPI Hub](https://rapidapi.com/hub)
-Ant Design
-Redux
-Axios
-Chart.js
-HTML Parser
-Millify
-Moment
-React Chart
+- VS Code
+- Extension: ES7+ React/Redux/React-Native/JS snippets
+- [RapidAPI Hub](https://rapidapi.com/hub)
+- Ant Design
+- Redux
+- Axios
+- Chart.js
+- HTML Parser
+- Millify
+- Moment
+- React Chart
 
 
 ## Steps
@@ -27,6 +27,6 @@ npx create-react-app cryptosite
 
 ### Install dependencies
 ```
-npm install antd @ant-design/icons redux @reduxjs/toolkit axios chart.js html-react-parser millify moment react-chartjs-2
+npm install antd @ant-design/icons redux @reduxjs/toolkit axios chart.js html-react-parser millify moment react-chartjs-2 react-router-dom
 ```
 
