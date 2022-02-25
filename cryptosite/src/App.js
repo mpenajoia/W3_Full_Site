@@ -6,7 +6,7 @@ import { Layout, Typography, Space } from 'antd';
 // bring in Navbar comp DEPRECATED
 // import Navbar from './components/Navbar';
 // after making index.js in components folder the following is possible
-import { Navbar } from './components';
+import { Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News } from './components';
 
 
 
@@ -17,7 +17,27 @@ function App() {
         <Navbar />
       </div>
       <div className='main'>
-
+        <Layout>
+          <div className='routes'>
+            <Switch>
+              <Route exact path="/">
+                <Homepage/>
+              </Route>
+              <Route exact path="/exchanges">
+                <Exchanges/>
+              </Route>
+              <Route exact path="/cryptocurrencies">
+                <Cryptocurrencies/>
+              </Route>
+              <Route exact path="/crypto/:coinId">
+                <CryptoDetails/>
+              </Route>
+              <Route exact path="/news">
+                <News/>
+              </Route>
+            </Switch>
+          </div>
+        </Layout>
       </div>
       <div className='footer'>
 
