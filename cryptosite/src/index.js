@@ -6,13 +6,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import 'antd/dist/antd.css'
+import { Provider } from 'react-redux';
+
+import 'antd/dist/antd.css';
+import store from './app/store';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* add router here */}
     <Router>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
